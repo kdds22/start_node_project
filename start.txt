@@ -1,0 +1,29 @@
+Desafio 01
+
+create a new folder/project
+
+yarn init -y
+yarn add express
+yarn add nodemon -D
+
+create a JS file
+
+express = require "express"
+server = express()
+server.use(express.json());
+
+server.listen(3000) //port
+
+project.json -> scripts { dev : nodemon index.js }
+
+
+create routes (CRUD)
+
+create middlewares
+
+server.use((req, res, next) => {
+  //console.log(`Método: ${req.method}, Url: ${req.url}`);
+  next();
+});
+
+// busca: const element = array.find(p => p.index == index);
